@@ -10,6 +10,11 @@ public class Vehicle {
         this.Year = year;
     }
 
+    public Vehicle() {
+        this.Brand = "Unknown";
+        this.Year = 0;
+    }
+
     public String getBrand() {
         return Brand;
     }
@@ -28,11 +33,11 @@ public class Vehicle {
         this.Year = year;
     }
 
-    public void StartVehicle() {
+    public void startVehicle() {
         System.out.println("The vehicle is starting");
     }
 
-    public void StopVehicle() {
+    public void stopVehicle() {
         System.out.println("The vehicle is stopping");
     }
 }
